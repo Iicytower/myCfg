@@ -1,0 +1,45 @@
+{
+	"name": "jest-snippets",
+	"displayName": "Jest Snippets",
+	"description": "Jest snippets",
+	"version": "1.2.0",
+	"author": "Andrew Smith <andrew@andrew.codes> (http://andrew.codes)",
+	"publisher": "andrew-codes",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andrew-codes/vscode-snippets.git"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"language": "javascript",
+	"__metadata": {
+		"id": "45a7c540-9c5c-4f1f-9678-c51e4b93ff7d",
+		"publisherId": "966901b6-4290-423d-addf-2ff74579e4fa",
+		"publisherDisplayName": "Andrew Smith",
+		"installedTimestamp": 1617961120867
+	}
+}

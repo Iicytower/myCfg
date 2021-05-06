@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Kdenlive
+Name[pl]=Kdenlive
+GenericName=Video Editor
+GenericName[pl]=Edytor wideo
+Comment=Nonlinear video editor by KDE
+Comment[pl]=Nieliniowy edytor wideo w ramach KDE
+Type=Application
+Exec=kdenlive %F
+Icon=kdenlive
+X-DocPath=kdenlive/index.html
+Terminal=false
+MimeType=application/x-kdenlive;
+Categories=Qt;KDE;AudioVideo;AudioVideoEditing;
+Keywords=video;audio;firewire;video4linux;suite;editing;kde;mlt;
+Keywords[pl]=edytowanie;video;wideo;filmy;audio;dźwięk;mlt;kde;
+X-DBUS-ServiceName=org.kde.kdenlive
+X-XFCE-Source=file:///usr/share/applications/org.kde.kdenlive.desktop

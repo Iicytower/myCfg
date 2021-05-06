@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="displays" version="1.0">
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="Default" type="empty">
+    <property name="eDP-1" type="string" value="Laptop">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="127873f57e8211703eebe831752db21ce06257d6"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60.052440"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="1080"/>
+      </property>
+    </property>
+    <property name="DP-2-3" type="string" value="HP 22&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="fc9d40ccec62c882015efe7066241dc500ea785a"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-2-2" type="string" value="HP 17&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="f32c0fc2a86fcd3ea7f4f71eeb81845d3b571213"/>
+      <property name="Resolution" type="string" value="1280x1024"/>
+      <property name="RefreshRate" type="double" value="60.019740"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="908"/>
+      </property>
+    </property>
+    <property name="HDMI-2" type="string" value="Panasonic 32&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="cd1625418bb9a76e5d6b65549d7ac33f1c04304c"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="50.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="1"/>
+      </property>
+    </property>
+  </property>
+  <property name="Fallback" type="empty">
+    <property name="eDP-1" type="string" value="Laptop">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="127873f57e8211703eebe831752db21ce06257d6"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60.052440"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="1080"/>
+      </property>
+    </property>
+    <property name="DP-2-3" type="string" value="HP 22&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="fc9d40ccec62c882015efe7066241dc500ea785a"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-2-2" type="string" value="HP 17&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="f32c0fc2a86fcd3ea7f4f71eeb81845d3b571213"/>
+      <property name="Resolution" type="string" value="1280x1024"/>
+      <property name="RefreshRate" type="double" value="60.019740"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="908"/>
+      </property>
+    </property>
+    <property name="HDMI-2" type="string" value="Panasonic 32&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="cd1625418bb9a76e5d6b65549d7ac33f1c04304c"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="50.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="1"/>
+      </property>
+    </property>
+  </property>
+  <property name="Notify" type="bool" value="true"/>
+  <property name="AutoEnableProfiles" type="bool" value="false"/>
+  <property name="IdentityPopups" type="bool" value="false"/>
+</channel>
