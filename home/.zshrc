@@ -168,6 +168,34 @@ function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 # Create a ZIP archive of a file or folder.
 function makezip() { zip -r "${1%%/}.zip" "$1" ; }
 
+function ts-starter-kit (){
+
+  git clone https://github.com/Iicytower/ts-starter-kit.git
+
+  mv -f ts-starter-kit/index.ts ./
+  mv -f ts-starter-kit/tsconfig.json ./
+  mv -f ts-starter-kit/.prettierrc ./
+  mv -f ts-starter-kit/.prettierignore ./
+
+  rm -rf ts-starter-kit
+
+  npm init -y
+  npm i -D typescript ts-node-dev prettier @types/node
+
+  node -e "
+  console.log('[LOG] Start modifying package.json... ');
+  var fs = require('fs');
+  var package = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+  console.log('[LOG] Adding start script...');
+  package.scripts.start='ts-node-dev --respawn index.ts'; 
+  console.log('[LOG] Adding prettier script...');
+  package.scripts.prettier='prettier -w ./**/*.ts'; 
+  package.main='dist/index.js';
+  fs.writeFileSync('./package.json', JSON.stringify(package, null, 2), 'utf8');
+  console.log('[LOG] Work finished. :)');
+  "
+}
+
 
 function my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
 
@@ -211,13 +239,31 @@ alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias grep='grep --color=auto'
 
 alias publicip='curl ifconfig.me'
-alias dcu='docker-compose up'
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
 alias dockerclear='docker system prune -a'
 alias dockerremove='docker rmi -f $(docker images -a -q)'
 alias dockerstop='docker stop $(docker ps -a -q)'
-alias ll='ls -la'
+alias ll='ls -lah'
 alias sa='sudo apt'
 alias sai='sudo apt install'
+alias code='flatpak run com.visualstudio.code'
+alias c.='code .'
+alias ws='/home/szymek/.webstorm/WebStorm/bin/webstorm.sh'
+alias ws.='/home/szymek/.webstorm/WebStorm/bin/webstorm.sh .'
+alias mongostart='sudo systemctl start mongod.service'
+alias mongostatus='sudo systemctl status mongod.service'
+alias currentBranch='git branch --show-current'
+alias gitloggraph='git log --graph --decorate --all --oneline'
+alias sourcezshrc='source ~/.zshrc'
+alias openports='sudo netstat -tulpn'
+alias playground='code ~/playground'
+alias loclx='~/.loclx'
+alias gitcheckout='git checkout'
+alias gitfetchorigin='git fetch origin'
+alias gitbranch='git branch'
+alias postman='/home/szymek/.postman/Postman'
 
 ### Bind keys
 #############
@@ -314,7 +360,8 @@ zstyle '*' single-ignored show
 ##################
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Shopify Hydrogen alias to local projects
